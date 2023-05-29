@@ -1,0 +1,10 @@
+static node js website:
+  #image: node
+  stage: build
+  script:
+    - npm install
+    - npm install -g gatsby-cli
+    - gatsby build
+  artifacts:
+    paths:
+      - ./public
